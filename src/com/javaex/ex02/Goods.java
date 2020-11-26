@@ -5,16 +5,20 @@ public class Goods {
 	private String name;
 	private int price;
 
+	//생성자 2개가 필요하다.
+	public Goods() {}
+	
 	public Goods(String name, int price) {
 		this.name = name;
 		this.price = price;
 	}
 	
+	//메소드
 	public String getName() {
 		return name;
 	}
-
-	private void setName(String name) {  
+    //public으로 수정. private는 안된다.
+	public void setName(String name) {  
 		this.name = name;
 	}
 

@@ -10,7 +10,6 @@ public class GoodsApp {
 		camera.setName("니콘");
 		camera.setPrice(400000);
 		
-		
 		camera.showInfo();
 		cup.showInfo();
 		
