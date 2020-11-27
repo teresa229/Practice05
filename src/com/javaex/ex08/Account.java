@@ -6,7 +6,18 @@ public class Account {
     private int balance;
     
     //생성자 작성
+    public Account(String accountNo) {
+    	this.accountNo = accountNo;
+    }
     
     //필요한 메소드 작성
-
+    public int deposit() {
+    	System.out.println(menuNo);
+    }
+    public int withdraw() {
+    	System.out.println(money);
+    }
+    public void showBalance() {
+    	sum = menuNo - money;
+    }
 }
