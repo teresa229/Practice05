@@ -15,6 +15,4 @@ public class CConverter {
     public static double toKWR(double dollar){
         return dollar * rate;
     }
-    
-
 }
