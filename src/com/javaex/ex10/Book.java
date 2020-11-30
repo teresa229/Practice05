@@ -12,6 +12,7 @@ public class Book {
     	this.bookNo = bookNo;
     	this.title = title;
     	this.author = author;
+    	
     }
     
     //메소드
@@ -48,17 +49,13 @@ public class Book {
 	}
 	
     //기본 메소드
-    public void displayBookInfo() {
-    	if(stateCode == 0) {
-    	System.out.println(bookNo+"책제목:" + title +", 작가: "+ author + "대여 유무: 대여중");
-        }else(stateCode == 1) {
-        	System.out.println(bookNo+"책제목:" + title +", 작가: "+ author + "대여 유무: 재고있음");}
-        }
-
     public void rent() {
+    	int defaultstateCode = 1;
     	if(stateCode == 0) {
     		System.out.println(title +"이(가) 대여 됐습니다.");
-            }	
+        }else {
+        	this.stateCode = defaultstateCode;
+        }	
     }
     
     public void print() {
@@ -67,5 +64,5 @@ public class Book {
         }if(stateCode == 1) {
         	System.out.println(bookNo+"책제목:" + title +", 작가: "+ author + "대여 유무: 재고있음");}
         }
-    }
- }
+}
+

@@ -30,6 +30,8 @@ public class BookShop {
         // 코드작성
         
         
+        
+        
 
         System.out.println("*****도서 정보 출력하기******");
         displayBookInfo(books);
@@ -40,7 +42,9 @@ public class BookShop {
     //(2)전달받은 배열을 모두 출력하는 메소드
     private static void displayBookInfo(Book[] books) {
         
-    	//코드작성
+    	for(int i= 0; i<books.length; i++) {
+    		books[i].print();
+    	}
     	
     }
 }

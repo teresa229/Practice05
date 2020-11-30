@@ -8,16 +8,17 @@ public class Account {
     //생성자 작성
     public Account(String accountNo) {
     	this.accountNo = accountNo;
+    	System.out.println(this.accountNo +"가 계설되었습니다.");
     }
     
     //필요한 메소드 작성
-    public int deposit() {
-    	System.out.println(menuNo);
+    public void deposit(int money) {
+    	this.balance = this.balance + money;
     }
-    public int withdraw() {
-    	System.out.println(money);
+    public void withdraw(int money) {
+    	this.balance = this.balance - money;
     }
     public void showBalance() {
-    	sum = menuNo - money;
+    	System.out.println(balance);
     }
 }
